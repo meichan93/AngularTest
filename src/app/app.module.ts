@@ -11,7 +11,7 @@ import { ReadComponent } from './pages/crud/read/read.component';
 import { UpdateComponent } from './pages/crud/update/update.component';
 import { DeleteComponent } from './pages/crud/delete/delete.component';
 import { HeaderComponent } from './pages/header/header.component';
-import {APP_BASE_HREF} from '@angular/common';
+// import {APP_BASE_HREF} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import {APP_BASE_HREF} from '@angular/common';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
