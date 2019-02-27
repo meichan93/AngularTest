@@ -1,0 +1,12 @@
+<div class="input-group mb-3 mt-5">
+  TITLE: {{model.title}}
+</div>
+<div class="input-group mb-3">
+  BODY: {{model.body}}
+</div>
+<button type="button" class="btn btn-primary w-100" (click)="delete(1)">DELETE RECORD</button>
+
+<div class="row mt-3 border border-success m-3 p-3">
+  <div class="col-12 ">RESPONSE </div>
+  <div class="col-12">{{ response }}</div>
+</div>

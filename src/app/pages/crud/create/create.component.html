@@ -1,0 +1,21 @@
+<div class="input-group mb-3 mt-5">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">TITLE</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Write a title" [(ngModel)]="model.title">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">BODY</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Write a body" [(ngModel)]="model.body">
+</div>
+<button type="button" class="btn btn-primary w-100" (click)="insert()">SEND</button>
+
+<div class="row mt-3 border border-success m-3 p-3">
+  <div class="col-12 ">RESPONSE </div>
+  <div class="col-12">Title: <b>{{ response.title }}</b></div>
+  <div class="col-12">Body: <b>{{ response.body }}</b></div>
+  <div class="col-12">UserId: <b>{{ response.userId }}</b></div>
+  <div class="col-12">ID: <b>{{ response.id }}</b></div>
+</div>
