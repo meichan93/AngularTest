@@ -8,7 +8,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
 })
 export class UpdateComponent implements OnInit, OnDestroy {
   model: any = {};
-  response = "";
+  response: any = {};
   constructor(private apiService: ApiServiceService) { }
 
   ngOnInit() {
@@ -23,7 +23,7 @@ export class UpdateComponent implements OnInit, OnDestroy {
     this.response = await this.apiService.apiService(this.model, "posts/1", "put");
   }
   ngOnDestroy(){
-    this.response = "";
+    this.response = [];
     this.model = {};
   }
 }

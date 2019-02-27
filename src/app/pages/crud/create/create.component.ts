@@ -8,7 +8,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
 })
 export class CreateComponent implements OnInit {
   model: any = {};
-  response = [];
+  response: any = {};
   constructor(private apiService: ApiServiceService) { }
 
   ngOnInit() {
